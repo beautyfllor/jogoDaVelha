@@ -5,15 +5,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PlayerVSpc"
+    tools:context=".niveisActivity"
     android:background="@color/background"
     android:orientation="vertical"
     android:gravity="center">
 
     <TextView
-        android:layout_width="242dp"
-        android:layout_height="97dp"
-        android:text="@string/com_quem_deseja_jogar"
+        android:layout_width="244dp"
+        android:layout_height="147dp"
+        android:text="@string/escolha_o_n_vel_de_dificuldade"
         android:textSize="36sp"
         android:textColor="@color/black"/>
 
@@ -21,16 +21,24 @@
         android:layout_width="244dp"
         android:layout_height="74dp"
         android:backgroundTint="@color/azul"
-        android:id="@+id/computador"
-        android:text="@string/computador"
-        android:layout_marginTop="110dp"/>
+        android:id="@+id/facil"
+        android:text="@string/f_cil"
+        android:layout_marginTop="50dp"/>
 
     <Button
         android:layout_width="244dp"
         android:layout_height="74dp"
         android:backgroundTint="@color/azul"
-        android:id="@+id/jogador"
-        android:text="@string/jogador"
-        android:layout_marginTop="77dp"/>
+        android:id="@+id/medio"
+        android:text="@string/m_dio"
+        android:layout_marginTop="44dp"/>
+
+    <Button
+        android:layout_width="244dp"
+        android:layout_height="74dp"
+        android:backgroundTint="@color/red"
+        android:id="@+id/dificil"
+        android:text="@string/dif_cil"
+        android:layout_marginTop="44dp"/>
 
 </LinearLayout>

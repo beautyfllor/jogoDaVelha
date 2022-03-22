@@ -10,6 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Jogodavelha">
         <activity
+            android:name=".vencedorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".splashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".jogo"
+            android:exported="false" />
+        <activity
+            android:name=".niveisActivity"
+            android:exported="false" />
+        <activity
             android:name=".PlayerVSpc"
             android:exported="false" />
         <activity

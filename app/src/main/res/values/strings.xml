@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">jogo-da-velha</string>
+    <string name="com_quem_deseja_jogar">Com quem deseja jogar?</string>
+    <string name="computador">Computador</string>
+    <string name="jogador">Jogador</string>
+    <string name="jogo_da_velha">Jogo da Velha</string>
+    <string name="novo_jogo">Novo Jogo</string>
+    <string name="sair">Sair</string>
+    <string name="dif_cil">Difícil</string>
+    <string name="escolha_o_n_vel_de_dificuldade">Escolha o nível de dificuldade:</string>
+    <string name="f_cil">Fácil</string>
+    <string name="m_dio">Médio</string>
 </resources>

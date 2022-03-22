@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vencedorActivity"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="316dp"
+        android:layout_height="134dp"
+        android:text="O Jogador 2 Venceu!"
+        android:textSize="48sp"
+        android:textColor="@color/red"
+        android:layout_marginTop="154dp"/>
+
+    <TextView
+        android:layout_width="260dp"
+        android:layout_height="86dp"
+        android:text="Deseja jogar novamente?"
+        android:layout_marginTop="156dp"
+        android:textSize="36dp"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="136dp"
+            android:layout_height="74dp"
+            android:id="@+id/sim"
+            android:text="Sim"
+            android:backgroundTint="@color/azul"
+            android:layout_marginTop="61dp"/>
+
+        <Button
+            android:layout_width="136dp"
+            android:layout_height="74dp"
+            android:id="@+id/nao"
+            android:text="Não"
+            android:backgroundTint="@color/red"
+            android:layout_marginTop="61dp"
+            android:layout_marginLeft="44dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

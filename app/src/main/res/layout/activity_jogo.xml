@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".jogo"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/azul"
+            android:id="@+id/jogador1"
+            android:text="Jogador 1"
+            android:layout_marginTop="106dp"
+            android:layout_marginLeft="30dp"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/azul"
+            android:id="@+id/jogador2"
+            android:text="Jogador 2"
+            android:layout_marginTop="106dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginRight="29dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/background">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/background"
+            android:layout_marginTop="100dp">
+
+            <Button
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:backgroundTint="@color/borda"
+                android:id="@+id/box1"/>
+
+            <Button
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:backgroundTint="@color/borda"
+                android:id="@+id/box2"
+                android:layout_marginLeft="12dp"/>
+
+            <Button
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:backgroundTint="@color/borda"
+                android:id="@+id/box3"
+                android:layout_marginLeft="12dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:backgroundTint="@color/borda"
+                android:id="@+id/box4"
+                />
+
+            <Button
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:backgroundTint="@color/borda"
+                android:id="@+id/box5"
+                android:layout_marginLeft="12dp"/>
+
+            <Button
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:backgroundTint="@color/borda"
+                android:id="@+id/box6"
+                android:layout_marginLeft="12dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:backgroundTint="@color/borda"
+                android:id="@+id/box7"
+                />
+
+            <Button
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:backgroundTint="@color/borda"
+                android:id="@+id/box8"
+                android:layout_marginLeft="12dp"/>
+
+            <Button
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:backgroundTint="@color/borda"
+                android:id="@+id/box9"
+                android:layout_marginLeft="12dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

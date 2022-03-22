@@ -13,14 +13,15 @@
     <TextView
         android:layout_width="260dp"
         android:layout_height="147dp"
-        android:text="Jogo da Velha"
+        android:text="@string/jogo_da_velha"
         android:textSize="64sp"
         android:textColor="@color/black"/>
 
     <Button
         android:layout_width="260dp"
         android:layout_height="74dp"
-        android:text="Novo Jogo"
+        android:id="@+id/novoJogo"
+        android:text="@string/novo_jogo"
         android:textSize="20sp"
         android:backgroundTint="@color/azul"
         android:layout_marginTop="77dp"/>
@@ -28,7 +29,8 @@
     <Button
         android:layout_width="260dp"
         android:layout_height="74dp"
-        android:text="Sair"
+        android:id="@+id/sair"
+        android:text="@string/sair"
         android:textSize="20sp"
         android:backgroundTint="@color/red"
         android:layout_marginTop="77dp"/>
