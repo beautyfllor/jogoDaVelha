@@ -10,8 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Jogodavelha">
         <activity
+            android:name=".jogoPlayer"
+            android:exported="false"
+            android:parentActivityName=".PlayerVSpc"/>
+        <activity
+            android:name=".jogoDificil"
+            android:exported="false"
+            android:parentActivityName=".niveisActivity"/>
+        <activity
+            android:name=".jogoMedio"
+            android:exported="false"
+            android:parentActivityName=".niveisActivity"/>
+        <activity
+            android:name=".jogoFacil"
+            android:exported="false"
+            android:parentActivityName=".niveisActivity"/>
+        <activity
             android:name=".vencedorActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".splashActivity"
             android:exported="true"
@@ -23,17 +40,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".jogo"
-            android:exported="false" />
-        <activity
             android:name=".niveisActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".PlayerVSpc" />
         <activity
             android:name=".PlayerVSpc"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

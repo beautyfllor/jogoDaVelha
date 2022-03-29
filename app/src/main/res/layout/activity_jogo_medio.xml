@@ -5,33 +5,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".jogo"
+    tools:context=".jogoMedio"
     android:background="@color/background"
     android:orientation="vertical"
     android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Médio"
+        android:textSize="25sp"
+        android:textColor="@color/black"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-        <Button
+        <TextView
             android:layout_width="150dp"
             android:layout_height="50dp"
-            android:backgroundTint="@color/azul"
+            android:background="@color/azul"
             android:id="@+id/jogador1"
-            android:text="Jogador 1"
+            android:text="@string/jogador_1"
+            android:textColor="@color/white"
+            android:textSize="27sp"
+            android:textAlignment="center"
             android:layout_marginTop="106dp"
-            android:layout_marginLeft="30dp"/>
+            android:layout_marginStart="30dp"/>
 
-        <Button
+        <TextView
             android:layout_width="150dp"
             android:layout_height="50dp"
-            android:backgroundTint="@color/azul"
+            android:background="@color/azul"
             android:id="@+id/jogador2"
-            android:text="Jogador 2"
+            android:text="@string/jogador_2"
+            android:textColor="@color/white"
+            android:textSize="27sp"
+            android:textAlignment="center"
             android:layout_marginTop="106dp"
-            android:layout_marginLeft="44dp"
-            android:layout_marginRight="29dp"/>
+            android:layout_marginStart="44dp"
+            android:layout_marginEnd="29dp" />
+
 
     </LinearLayout>
 
@@ -60,14 +74,14 @@
                 android:layout_height="95dp"
                 android:backgroundTint="@color/borda"
                 android:id="@+id/box2"
-                android:layout_marginLeft="12dp"/>
+                android:layout_marginStart="12dp"/>
 
             <Button
                 android:layout_width="95dp"
                 android:layout_height="95dp"
                 android:backgroundTint="@color/borda"
                 android:id="@+id/box3"
-                android:layout_marginLeft="12dp"/>
+                android:layout_marginStart="12dp"/>
 
         </LinearLayout>
 
@@ -89,14 +103,14 @@
                 android:layout_height="95dp"
                 android:backgroundTint="@color/borda"
                 android:id="@+id/box5"
-                android:layout_marginLeft="12dp"/>
+                android:layout_marginStart="12dp"/>
 
             <Button
                 android:layout_width="95dp"
                 android:layout_height="95dp"
                 android:backgroundTint="@color/borda"
                 android:id="@+id/box6"
-                android:layout_marginLeft="12dp"/>
+                android:layout_marginStart="12dp"/>
 
         </LinearLayout>
 
@@ -111,25 +125,24 @@
                 android:layout_height="95dp"
                 android:backgroundTint="@color/borda"
                 android:id="@+id/box7"
-                />
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:layout_width="95dp"
                 android:layout_height="95dp"
                 android:backgroundTint="@color/borda"
                 android:id="@+id/box8"
-                android:layout_marginLeft="12dp"/>
+                android:layout_marginStart="12dp"/>
 
             <Button
                 android:layout_width="95dp"
                 android:layout_height="95dp"
                 android:backgroundTint="@color/borda"
                 android:id="@+id/box9"
-                android:layout_marginLeft="12dp"/>
+                android:layout_marginStart="12dp"/>
 
         </LinearLayout>
 
     </LinearLayout>
 
 </LinearLayout>
-

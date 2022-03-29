@@ -10,4 +10,7 @@
     <string name="escolha_o_n_vel_de_dificuldade">Escolha o nível de dificuldade:</string>
     <string name="f_cil">Fácil</string>
     <string name="m_dio">Médio</string>
+    <string name="jogador_1">Jogador 1</string>
+    <string name="jogador_2">Jogador 2</string>
+    <string name="player_x_player">Player X Player</string>
 </resources>
