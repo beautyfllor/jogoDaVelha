@@ -24,7 +24,7 @@
         <TextView
             android:layout_width="150dp"
             android:layout_height="50dp"
-            android:background="@color/azul"
+            android:background="@color/red"
             android:id="@+id/jogador1"
             android:text="@string/jogador_1"
             android:textColor="@color/white"
@@ -66,21 +66,24 @@
                 android:layout_width="95dp"
                 android:layout_height="95dp"
                 android:backgroundTint="@color/borda"
-                android:id="@+id/box1"/>
+                android:id="@+id/box1"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:layout_width="95dp"
                 android:layout_height="95dp"
                 android:backgroundTint="@color/borda"
                 android:id="@+id/box2"
-                android:layout_marginStart="12dp"/>
+                android:layout_marginStart="12dp"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:layout_width="95dp"
                 android:layout_height="95dp"
                 android:backgroundTint="@color/borda"
                 android:id="@+id/box3"
-                android:layout_marginStart="12dp"/>
+                android:layout_marginStart="12dp"
+                style="?android:attr/buttonBarButtonStyle" />
 
         </LinearLayout>
 
@@ -95,21 +98,23 @@
                 android:layout_height="95dp"
                 android:backgroundTint="@color/borda"
                 android:id="@+id/box4"
-                />
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:layout_width="95dp"
                 android:layout_height="95dp"
                 android:backgroundTint="@color/borda"
                 android:id="@+id/box5"
-                android:layout_marginStart="12dp"/>
+                android:layout_marginStart="12dp"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:layout_width="95dp"
                 android:layout_height="95dp"
                 android:backgroundTint="@color/borda"
                 android:id="@+id/box6"
-                android:layout_marginStart="12dp"/>
+                android:layout_marginStart="12dp"
+                style="?android:attr/buttonBarButtonStyle" />
 
         </LinearLayout>
 
@@ -131,14 +136,16 @@
                 android:layout_height="95dp"
                 android:backgroundTint="@color/borda"
                 android:id="@+id/box8"
-                android:layout_marginStart="12dp"/>
+                android:layout_marginStart="12dp"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:layout_width="95dp"
                 android:layout_height="95dp"
                 android:backgroundTint="@color/borda"
                 android:id="@+id/box9"
-                android:layout_marginStart="12dp"/>
+                android:layout_marginStart="12dp"
+                style="?android:attr/buttonBarButtonStyle" />
 
         </LinearLayout>
 
