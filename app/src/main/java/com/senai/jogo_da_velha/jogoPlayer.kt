@@ -9,14 +9,12 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 
 class jogoPlayer : AppCompatActivity() {
+
+    var jogador = "X"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_jogo_player)
-
-        val jogador1 = findViewById<TextView>(R.id.jogador1)
-        val jogador2 = findViewById<TextView>(R.id.jogador2)
-
-        val jogadorAtual = 1
 
         val box1 = findViewById<Button>(R.id.box1)
         val box2 = findViewById<Button>(R.id.box2)
@@ -28,20 +26,89 @@ class jogoPlayer : AppCompatActivity() {
         val box8 = findViewById<Button>(R.id.box8)
         val box9 = findViewById<Button>(R.id.box9)
 
-        box1.setOnClickListener() {
-            if (jogadorAtual == 1) {
-                box1.text = "X"
-            }
-        jogador1.setBackgroundColor(ContextCompat.getColor(this, R.color.azul))
-        jogador2.setBackgroundColor(ContextCompat.getColor(this, R.color.red))
+
+        box1.setOnClickListener { it as Button
+            jogar(it)
+            proximoJogador()
         }
 
-        box2.setOnClickListener() {
-            if(jogadorAtual == 1) {
-                box2.text = "X"
-            }
-            jogador1.setBackgroundColor(ContextCompat.getColor(this, R.color.red))
-            jogador2.setBackgroundColor(ContextCompat.getColor(this, R.color.azul))
+        box2.setOnClickListener { it as Button
+            jogar(it)
+            proximoJogador()
         }
+
+        box3.setOnClickListener { it as Button
+            jogar(it)
+            proximoJogador()
+        }
+
+        box4.setOnClickListener { it as Button
+            jogar(it)
+            proximoJogador()
+        }
+
+        box5.setOnClickListener { it as Button
+            jogar(it)
+            proximoJogador()
+        }
+
+        box6.setOnClickListener { it as Button
+            jogar(it)
+            proximoJogador()
+        }
+
+        box7.setOnClickListener { it as Button
+            jogar(it)
+            proximoJogador()
+        }
+
+        box8.setOnClickListener { it as Button
+            jogar(it)
+            proximoJogador()
+        }
+
+        box9.setOnClickListener { it as Button
+            jogar(it)
+            proximoJogador()
+        }
+
+
+//        box5.setOnClickListener() {
+//            if(jogadorAtual == 1) {
+//                box5.text = "X"
+//            }
+//            jogador1.setBackgroundColor(ContextCompat.getColor(this, R.color.red))
+//            jogador2.setBackgroundColor(ContextCompat.getColor(this, R.color.azul))
+//        }
+//
+//        if(box9.isPressed) {
+//            jogadorAtual = 2;
+//            if(jogadorAtual == 2) {
+//                box2.text = "O"
+//                jogador1.setBackgroundColor(ContextCompat.getColor(this, R.color.azul))
+//                jogador2.setBackgroundColor(ContextCompat.getColor(this, R.color.red))
+//            }
+//        }
+
+        //val jogadas = arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9)
+    }
+
+    private fun jogar(it: Button) {
+        it.text = jogador
+        it.isEnabled = false
+    }
+
+    private fun proximoJogador() {
+        if (jogador == "X") {
+            jogador = "O"
+        }else{
+            jogador = "X"
+        }
+        //Tem que arrumar essas cores
+        val jogador1 = findViewById<TextView>(R.id.jogador1)
+        val jogador2 = findViewById<TextView>(R.id.jogador2)
+
+        jogador1.setBackgroundColor(ContextCompat.getColor(this, R.color.azul))
+        jogador2.setBackgroundColor(ContextCompat.getColor(this, R.color.red))
     }
 }

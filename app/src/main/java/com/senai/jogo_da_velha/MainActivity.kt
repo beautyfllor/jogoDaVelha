@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import androidx.appcompat.app.AlertDialog
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -11,17 +12,18 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val novoJogo = findViewById<Button>(R.id.novoJogo)
-        val sair = findViewById<Button>(R.id.sair)
 
         novoJogo.setOnClickListener() {
             val intent = Intent(this, PlayerVSpc::class.java)
             startActivity(intent)
         }
 
-        sair.setOnClickListener() {
-            finish()
-        }
+        val alertButton = findViewById<Button>(R.id.sair)
+        alertButton.setOnClickListener{mensagemAlert()}
+    }
 
-        val alertButton
+    private fun mensagemAlert() {
+        AlertDialog.Builder(this).setTitle("Atenção!!").setMessage("Deseja sair do APP?").setPositiveButton("Sim") {_,_-> finish()}
+            .setNegativeButton("Cancelar") {_,_->}.show()
     }
 }
