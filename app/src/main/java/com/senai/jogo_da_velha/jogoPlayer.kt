@@ -30,46 +30,55 @@ class jogoPlayer : AppCompatActivity() {
         box1.setOnClickListener { it as Button
             jogar(it)
             proximoJogador()
+            color()
         }
 
         box2.setOnClickListener { it as Button
             jogar(it)
             proximoJogador()
+            color()
         }
 
         box3.setOnClickListener { it as Button
             jogar(it)
             proximoJogador()
+            color()
         }
 
         box4.setOnClickListener { it as Button
             jogar(it)
             proximoJogador()
+            color()
         }
 
         box5.setOnClickListener { it as Button
             jogar(it)
             proximoJogador()
+            color()
         }
 
         box6.setOnClickListener { it as Button
             jogar(it)
             proximoJogador()
+            color()
         }
 
         box7.setOnClickListener { it as Button
             jogar(it)
             proximoJogador()
+            color()
         }
 
         box8.setOnClickListener { it as Button
             jogar(it)
             proximoJogador()
+            color()
         }
 
         box9.setOnClickListener { it as Button
             jogar(it)
             proximoJogador()
+            color()
         }
 
 
@@ -104,7 +113,10 @@ class jogoPlayer : AppCompatActivity() {
         }else{
             jogador = "X"
         }
-        //Tem que arrumar essas cores
+    }
+
+    //Tem que arrumar essas cores
+    private fun color() {
         val jogador1 = findViewById<TextView>(R.id.jogador1)
         val jogador2 = findViewById<TextView>(R.id.jogador2)
 
